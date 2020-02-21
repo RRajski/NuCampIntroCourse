@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function formSubmit() {
+            document.forms["myForm"].submit();
+        }
+        </script>
+
+</head>
+        <body>
+            <div id="part-1">
+            <form action="https://learn.nucamp.co/show_everything.php" method="POST">
+                <p>Please enter any feedback you have.</p>
+                <textarea rows="3" cols="60" name="feedback">Please enter your text here</textarea>
+                <br>
+                <input type="submit" value="Send"
+            </form>
+            </div>
+            <fieldset>
+            <form name="myForm" action="/action_page.php" method="get">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+                <input type="button" onclick="formSubmit()" value="Send form data!">
+            </form>
+            </fieldset>
+            <fieldset>
+                <input placeholder="email" type="email">
+                <button>submit</button>
+            </fieldset>
+            <fieldset id="name-address">
+                <label for="client-address"><Address></label>
+            <textarea id="address" rows="5" cols="60" placeholder="Please provide your name and address"></textarea>
+            
+                <div>
+                    <input type="submit" value="Send"
+                </div>
+                
+
+
+
+
+            </fieldset>
+
+        </body>
+
+
+</html>

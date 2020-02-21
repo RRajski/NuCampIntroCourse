@@ -1,0 +1,177 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <!-- Styling requirements
+The background of each fieldset is lightyellow e.g. background:lightyellow Complete.
+The border of each fieldset is yellow, with 10px width e.g. border:10px solid yellow Complete
+The fieldset needs to have margin-bottom:10px Complete.
+The width of each fieldset is 720pxComplete.
+The width of each label is 180px Comlete.
+The label text needs to have display:inline-block Complete.
+The label text needs to be aligned to the right, and the label needs to be vertically aligned to the top;Complete 
+please search on the internet which CSS properties will allow you to achieve these specific alignments. Complete
+The labels of the checkbox and the radio needs to have width:auto
+For the words on both sides of the two range, you can use any appropriate style e.g. text-align:center. -->
+
+<style>
+    .fieldset{
+        background: lightyellow;
+        border: 10px solid yellow;
+        margin-bottom: 10px;
+        width: 720px;
+    }
+    label{
+        width:180px;
+        align-items: top;
+    }
+    label text{
+        display: inline-block;
+        text-align: right;
+        text-align: top;
+    }
+    .first-span{
+        background: red;
+        color: white;
+        text-align:center;
+        margin-left: 5px;
+    } 
+    #poor{
+        margin-left: 8px;
+        /* margin-right: 1px; */
+    }
+    .second-span{
+        background: purple;
+        color: white;
+        text-align:center;
+        margin-left: 5px;
+    }
+    #address,textarea{
+        vertical-align: top;
+    }
+    label:hover, input:hover{
+        font-size: 40px;
+    }
+   
+    
+
+
+
+
+
+</style>
+
+
+
+
+
+    <body>
+        <h2>Please Enter Your Details For Our Dating Website!</h2>
+
+        <!--    Fieldset 1 start XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+    <!--        Add a legend tag for the Fieldset saying ‘Your face’ Complete-->
+    <!--        input type="file" [required] with a name=“avatar” and an id=”avatar” with the label “Your Image:” Complete-->
+    <!--        An img element with id="preview" with the label “Image Preview:” Complete-->
+
+
+            <fieldset id="Face" class="fieldset">
+                <legend class="label-text">Your Face</legend>
+                <label>Your Image:<label><input type="file" name="avatar" id="avatar"><br>
+                    <label>Image Preview:</label><img id="preview">
+                    
+            </fieldset>
+            <!--    Fieldset 1 end-->
+
+        <!-- Fieldset 2    start XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+
+        
+        <!--    Fieldset 2 start-->
+    <!--        Add a legend tag for the Fieldset saying ‘Your general details’ Complete-->
+    <!--        input type= "text"  [required] with a name=“name” and id=”name” with the label “Name:”x-->
+    <!--        input type="radio" (two of these) [required] with name=“gender” but with two different id and values (male and female)x-->
+    <!--        input type="number" [required] with name=“age” and id=”age” and a labelx-->
+    <!--        input type="date" with name=“dob” and id=”dob” and a label-->
+    <!--        input type="color" with name=“color” and id=”color” and a label-->
+    <!--        select , with 6 option , to handle ‘no selection’ plus 5 different countries x-->
+
+            <fieldset id="General-Details" class="fieldset">
+                <legend class="label-text">Your General Details</legend>
+                <label>Name:</label><input type="text" name="name" id="name" placeholder="Your full name">
+                    <br>
+                <label>Gender:</label>  <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                    <br>
+                <label>Age:</label><input type="number" name="age" id="age">
+                    <br>
+                <label>Date of Birth:</label><input type="date">
+                    <br>
+                <label>Favorite Color:</label><input type="color" name="color" id="color">
+                    <br>
+                <label for="Countries">Which Country</label>
+                    <select id="Countries">
+                        <option value="Great Britain">Great Britain</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Mexico">Mexico</option>
+                        <option value="United States">United States</option>
+                        <option value="Cuba">Cuba</option>
+                        <option value="No Selection">No Selection</option>
+                    </select>
+            </fieldset>
+        <!--    Fieldset 2 end-->
+        
+
+        <!--    Fieldset 3 start-->
+<!--        Add a legend tag for the Fieldset saying ‘Your Indicators’-->
+<!--        input type="range" min="0" max="100". Use a combination of Label <label> and Span <span> for the indicator text-->
+<!--input type="range" min="0" max="100". Use a combination of Label <label> and Span <span> for the indicator text-->
+
+        <fieldset id="Indicators" class="fieldset">
+            <legend class="label-text">Your Indicators</legend>
+            <label>Height:</label><span class="first-span">&nbsp;&nbsp;Short&nbsp;&nbsp;</span><input type="range" min="0" max="100">
+                <span class="second-span">&nbsp;&nbsp;&nbsp;Tall&nbsp;&nbsp;&nbsp;</span><br>
+            <label>Salary:</label><span id="poor" class="first-span">&nbsp;&nbsp;Poor&nbsp;&nbsp;&nbsp;</span><input type="range" min="0" max="100">
+                <span class="second-span" id="rich">&nbsp;&nbsp;Rich&nbsp;&nbsp;</span>
+        </fieldset>
+        <!--    Fieldset 3 end-->
+
+        <!--    Fieldset 4 start-->
+<!--        Add a legend tag for the Fieldset saying ‘Your Contact Information’-->
+<!--        input type="email" [required] with name=“email” and id=”email” and a label-->
+<!--        input type="tel" with name=“mobile” and id=”mobile” and a label-->
+<!--        textarea with name=“address”, id=”address”  20 columns, 3 rows and a label-->
+<!--        input type="checkbox" ... , three of these are needed for the three types of contact method-->
+
+        <fieldset id="Contact-Information" class="fieldset">
+            <legend class="label-text">Your Contact Information</legend>
+                <label>Email:</label><input type="email" name="email" id="email">
+                <br>
+            <label>Mobile:</label><input type="tel" name="mobile" id="mobile">
+                <br>
+            <label id="address">Address:</label>
+            <textarea name="address" id="address" cols="20" rows="3"></textarea>
+        
+            <form action="/action_page.php">
+                <label>Method to Contact you:</label>
+                    <input type="checkbox" name="answer1" value="Email"><label>Email</label>
+                    <input type="checkbox" name="answer2" value="Whatsapp"><label>Whats app</label>
+                    <input type="checkbox" name="answer3" value="In-app chat"><label for="answer 3">In-app chat</label>
+            </form>
+        </fieldset>
+
+        <!--    Fieldset 4 end-->
+
+    
+    <div>
+        <input type="submit">
+    </div>
+
+ 
+    <script src="https://url.nucamp.co/datingjs"></script> 
+
+    </body>
+    </html>

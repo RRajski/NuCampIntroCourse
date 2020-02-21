@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="check_user_age()" style="position: absolute;">
+    <h1><Spiritueux Wines and Liquors</h1>
+    <script>
+        function check_user_age(){
+            if(age_of_user() <18)
+            alert("You are too young to buy alcohol.");
+        }
+
+        function age_of_user(){
+            var age = prompt("What is your age?");
+            return age;
+        }
+
+    </script>    
+    
+</body>
+</html>
