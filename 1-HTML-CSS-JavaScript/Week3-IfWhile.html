@@ -6,12 +6,12 @@
     <title>Example of do...while()</title>
     <script>
         var response, finished;
-        finished=false;
+         var finished=false;
         alert("I'd like to code in JavaScript all night!");
 
         do {
             response=prompt("Do you agree?");
-            if (response.indexOf("y")==0)
+            if (response.toLowerCase().indexOf("y") == 0)
             finished=true;
         }
         }while (!finished);
