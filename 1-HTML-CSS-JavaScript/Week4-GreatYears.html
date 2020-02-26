@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var continents=["Australia", "Africa", "Anarctica", "Eurasia", "North America",
+                        "South America"];
+        var response, count=0;
+        for (var index=0, index < continents.length;
+            index++){
+                response=confirm("Have you been to " +
+                continents[index] + "?");
+            if (response) count ++;    
+
+            }
+         alert("You have been to " + count + " continents"); 
+         
+         var response, count=0;
+         var onePerson = { initials:"DR", age:40,
+            job:Professor"};
+
+        for (var oroperty in onePerson){
+            alert(property + "=" + onePerson[property]);
+        }    
+
+
+
+
+
+        var year, great_years = [];
+        for (year = 2014; year <= 2016; year++){
+            correct=confirm(year + " was great for you?")
+            if (!correct) continue;
+                great_years.push(year)
+        }
+        alert("Your great years were: " + great_years);
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
