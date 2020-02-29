@@ -12,6 +12,7 @@ function show_pattern(){
         this_div.style.left = left_position + "px";
         this_div.style.width = width +"px";
         this_div.style.height = height = "px";
+        this.div.style.borderradius = 50%;
         this_div.style.background = color_list[random_color];
         the_body.appendChild(this_div);
         top_position += 10;
